@@ -2,8 +2,12 @@
 title: COVID-19 Risk Predictor
 summary: Using patient clinical and demographic features to predict mortality risk.
 tags:
-- Machine Learning, XGBoost, COVID-19, Predictive Modeling
-date: "2016-04-27T00:00:00Z"
+- Machine Learning
+- XGBoost
+- COVID-19
+- Predictive Modeling
+- Python
+date: "2020-04-10T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""

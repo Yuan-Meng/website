@@ -2,7 +2,7 @@
 name = "alison"
 
 # Optional Google font URL
-google_fonts = "Arapey:400,400i|Karla:400,700|Roboto+Mono"
+google_fonts = "Arapey:400,400i,600|Karla:400,700|Roboto+Mono"
 
 # Font families
 heading_font = "Arapey"
