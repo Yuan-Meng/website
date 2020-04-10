@@ -10,20 +10,22 @@ authors:
 superuser: true
 
 # Role/position
-role: Cognitive ⤇ Data Science
+role: Cognitive Science ⤇ Data Science
 
 # Organizations/Affiliations
 organizations:
-- name: UC Berkeley
-  url: ""
+- name: University of California, Berkeley
+  url: "https://www.babylab.berkeley.edu/"
 
 # Short bio (displayed in user profile at end of posts)
 bio: I build mathematical models to study how people think and make decisions.
 
 interests:
 - Data Science
+- Machine Learning
+- Bayesian Stats + Cognitive Modeling ("Doubly Bayes")
+- Experiment Design 
 - Causal Inference
-- Bayesian Modeling
 
 education:
   courses:
