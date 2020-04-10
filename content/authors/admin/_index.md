@@ -23,8 +23,8 @@ bio: I build mathematical models to study how people think and make decisions.
 interests:
 - Data Science
 - Machine Learning
-- Bayesian Stats + Cognitive Modeling ("Doubly Bayes")
-- Experiment Design 
+- Bayesian Statistics + Bayesian Cognitive Models (["Doubly Bayes"](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004519))
+- Experimental Design 
 - Causal Inference
 
 education:
