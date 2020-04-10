@@ -18,7 +18,7 @@ organizations:
   url: "https://www.babylab.berkeley.edu/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: I build mathematical models to study how people think and make decisions.
+bio: I build mathematical models to study the mind.
 
 interests:
 - Data Science
@@ -29,10 +29,10 @@ interests:
 
 education:
   courses:
-  - course: PhD Student in Psychology
+  - course: PhD in Psychology
     institution: University of California, Berkeley
     year: 2016 - Present
-  - course: Bsc in Psychology
+  - course: BSc in Psychology
     institution: Beijing Normal University
     year: 2012 - 2016
 
@@ -49,7 +49,7 @@ social:
   link: https://www.linkedin.com/in/yuanmengds/
 - icon: github
   icon_pack: fab
-  link: https://github.com/Yuan-Meng/website
+  link: https://github.com/Yuan-Meng
 - icon: medium
   icon_pack: fab
   link: https://medium.com/@yuanmeng_37677

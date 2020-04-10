@@ -17,28 +17,48 @@ date_format = "Jan 2006"
 #   Required fields are `title`, `company`, and `date_start`.
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
+
 [[experience]]
-  title = "CEO"
-  company = "GenCoin"
+  title = "Graduate Student Researcher"
+  company = "Berkeley Early Learning Lab"
   company_url = ""
-  location = "California"
-  date_start = "2017-01-01"
+  location = "Berkeley, CA"
+  date_start = "2016-08-16"
   date_end = ""
   description = """
-  Responsibilities include:
+  Lead research on human learning and decision making, including causal inference, information search, social cognition:
   
-  * Analysing
-  * Modelling
-  * Deploying
+  * Conducted behavioral experiments with adults, children, and infants
+  * Build Bayesian computational models to capture human learning 
+  * Trained and managed 10+ research assistants and 7 summer interns
+
   """
 
 [[experience]]
-  title = "Professor"
-  company = "University X"
+  title = "Data Science Student"
+  company = "Thinkful"
   company_url = ""
-  location = "California"
-  date_start = "2016-01-01"
-  date_end = "2016-12-31"
-  description = """Taught electronic engineering and researched semiconductor physics."""
+  location = "New York (Remote)"
+  date_start = "2019-09-01"
+  date_end = ""
+  description = """Learning core data science techniques with senior data scientists in industry:
+
+  * Training in SQL, data wrangling, data visualization, machine learning, A/B testing, data structures and algorithms, big data, web scraping
+  * Built and presented 5 capstone projects applying to tackling real-world issues, such as examining biases in police shootings, predicting mortality risk of COVID-19 patients
+  """
+
+[[experience]]
+  title = "Graduate Student Instructor"
+  company = "UC Berkeley"
+  company_url = ""
+  location = "Berkeley, CA"
+  date_start = "2018-09-01"
+  date_end = ""
+  description = """Taught 250+ Berkeley undergraduates in methodological and theoretical courses in Cognitive Science:
+
+  * Designed and led weekly discussions on course material and recent academic findings 
+  * Engaged students in online discussions and answered student questions in weekly office hours
+  * Collaborated with teams of graduate student instructors and professors in exam/assignment development, logistics, and grading
+  """
 
 +++

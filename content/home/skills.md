@@ -18,36 +18,36 @@ subtitle = ""
   icon = "python"
   icon_pack = "fab"
   name = "Python"
-  #description = "Famliar"
+  description = "Pandas + NumPy + PyMC3"
 
 [[feature]]
   icon = "database"
   icon_pack = "fas"
   name = "SQL"
-  #description = "Famliar"   
+  description = "PostgreSQL + SQLite"   
 
 [[feature]]
   icon = "r-project"
   icon_pack = "fab"
   name = "R"
-  #description = "Famliar"    
+  description = "Tidyverse + JAGS"    
 
 [[feature]]
   icon = "robot"
   icon_pack = "fas"
   name = "Machine Learning"
-  #description = "100%"    
+  description = "Scikit-learn + XGBoost + Keras"    
   
 [[feature]]
   icon = "chart-bar"
   icon_pack = "fas"
-  name = "Statistics"
-  #description = "100%"  
+  name = "Math & Statistics"
+  description = "Mixed Models + Bayesian + MCMC"  
   
 [[feature]]
   icon = "flask"
   icon_pack = "fas"
   name = "Experimental Design"
-  #description = "10%"
+  description = "Multifactorial Designs + MTurk + Qualtrics"
 
 +++
