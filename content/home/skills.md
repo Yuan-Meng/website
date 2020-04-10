@@ -18,30 +18,36 @@ subtitle = ""
   icon = "python"
   icon_pack = "fab"
   name = "Python"
-  description = "Famliar"
+  #description = "Famliar"
+
+[[feature]]
+  icon = "database"
+  icon_pack = "fas"
+  name = "SQL"
+  #description = "Famliar"   
 
 [[feature]]
   icon = "r-project"
   icon_pack = "fab"
   name = "R"
-  description = "Famliar"  
+  #description = "Famliar"    
 
 [[feature]]
-  icon = "sql"
-  icon_pack = "fab"
-  name = "SQL"
-  description = "Famliar"   
+  icon = "robot"
+  icon_pack = "fas"
+  name = "Machine Learning"
+  #description = "100%"    
   
 [[feature]]
-  icon = "chart-line"
+  icon = "chart-bar"
   icon_pack = "fas"
   name = "Statistics"
-  description = "100%"  
+  #description = "100%"  
   
 [[feature]]
-  icon = "camera-retro"
+  icon = "flask"
   icon_pack = "fas"
-  name = "Photography"
-  description = "10%"
+  name = "Experimental Design"
+  #description = "10%"
 
 +++
