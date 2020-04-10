@@ -1,6 +1,6 @@
 ---
 # Display name
-name: Nelson Bighetti
+name: Yuan Meng
 
 # Username (this should match the folder name)
 authors:
@@ -10,11 +10,11 @@ authors:
 superuser: true
 
 # Role/position
-role: Professor of Artificial Intelligence
+role: Cognitive Science + Data Science
 
 # Organizations/Affiliations
 organizations:
-- name: Stanford University
+- name: UC Berkeley
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
