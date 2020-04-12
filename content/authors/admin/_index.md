@@ -10,12 +10,12 @@ authors:
 superuser: true
 
 # Role/position
-role: Cognitive Science ⤇ Data Science
+role: Cognitive Science → Data Science | They/Them/Theirs
 
 # Organizations/Affiliations
 organizations:
 - name: University of California, Berkeley
-  url: "https://www.babylab.berkeley.edu/"
+  url: "https://www.berkeley.edu/"
 
 # Short bio (displayed in user profile at end of posts)
 bio: I build mathematical models to study the mind.
@@ -23,7 +23,7 @@ bio: I build mathematical models to study the mind.
 interests:
 - Data Science
 - Machine Learning
-- Bayesian Statistics + Bayesian Cognitive Models (["Doubly Bayes"](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004519))
+- Bayesian Statistics + Bayesian Cognitive Models (["Doubly Bayesian"](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004519))
 - Experimental Design 
 - Causal Inference
 
@@ -72,4 +72,5 @@ user_groups:
 - Visitors
 ---
 
-I'm a 4th-year PhD student in Psychology at UC Berkeley.
+I am a PhD student in Psychology at UC Berkeley. I study the most powerful learning machines on Earth: Human children. How do they experiment on the world to figure things out? How do they learn from others? Are they just "being children" or do they follow principles of optimal inference somewhat like scientists do? To understand these questions, I build computational models to simulate ideal learners and compare them with how people actually think.
+
