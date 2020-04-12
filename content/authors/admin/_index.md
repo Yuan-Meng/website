@@ -10,11 +10,11 @@ authors:
 superuser: true
 
 # Role/position
-role: Cognitive Science → Data Science | They/Them/Theirs
+role: Cognitive Science → Data Science <br> They/Them/Theirs </br>
 
 # Organizations/Affiliations
 organizations:
-- name: University of California, Berkeley
+- name: PhD Student at Berkeley
   url: "https://www.berkeley.edu/"
 
 # Short bio (displayed in user profile at end of posts)
@@ -34,7 +34,7 @@ education:
     year: 2016 - Present
   - course: BSc in Psychology
     institution: Beijing Normal University
-    year: 2012 - 2016
+    year: 2012 - 2016   
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
@@ -72,5 +72,6 @@ user_groups:
 - Visitors
 ---
 
-I am a PhD student in Psychology at UC Berkeley. I study the most powerful learning machines on Earth: Human children. How do they experiment on the world to figure things out? How do they learn from others? Are they just "being children" or do they follow principles of optimal inference somewhat like scientists do? To understand these questions, I build computational models to simulate ideal learners and compare them with how people actually think.
+**As a cognitive scientist**, I study the most powerful learning machines on Earth: Human children. How do they experiment on the world to figure things out? How do they learn from others? Are they just "being children" or do they follow principles of optimal inference like scientists do? To answer these fundamental questions, I build computational models to simulate ideal learners and compare them with how children (and adults) actually think and do.
 
+**As an aspiring data scientist**, I love to apply my skills in machine learning, statistical modeling, and experimental design to making sense of messy, complex data and informing critical decisions, be them personal or for products that impact millions of users. Seeking job opportunities after Summer 2020!  
