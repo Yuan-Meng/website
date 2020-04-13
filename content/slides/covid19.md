@@ -11,7 +11,9 @@ slides:
   # Choose a code highlighting style (if highlighting enabled in `params.toml`)
   #   Light style: github. Dark style: dracula (default).
   highlight_style: dracula
+   
 ---
+
 
 # COVID-19 Risk Predictor
 
@@ -21,148 +23,113 @@ Yuan Meng
 
 ---
 
-## Features
-
-- Efficiently write slides in Markdown
-- 3-in-1: Create, Present, and Publish your slides
-- Supports speaker notes
-- Mobile friendly slides
+# If I get COVID-19, will I survive or die? 
 
 ---
 
-## Controls
+## Fatality rate by age
 
-- Next: `Right Arrow` or `Space`
-- Previous: `Left Arrow`
-- Start: `Home`
-- Finish: `End`
-- Overview: `Esc`
-- Speaker notes: `S`
-- Fullscreen: `F`
-- Zoom: `Alt + Click`
-- [PDF Export](https://github.com/hakimel/reveal.js#pdf-export): `E`
+<figure>
+  <img src="/img/age.png" align=top height="320" hspace="-10" />
+</figure>
+
+- Similarly low for patients under 40
+- Increases sharply from 60+ to 80+
 
 ---
 
-## Code Highlighting
+## Fatality rate by pre-existing conditions
 
-Inline code: `variable`
+<figure>
+  <img src="/img/preconditions.png" align=top width="400" hspace="-10" />
+</figure>
 
-Code block:
-```python
-porridge = "blueberry"
-if porridge == "blueberry":
-    print("Eating...")
-```
+- Patients with certain pre-existing conditions are far more likely to die than healthy patients 
 
 ---
 
-## Math
+## Fatality rate by sex
 
-In-line math: $x + y = z$
+<figure>
+  <img src="/img/sex.png" align=top width="500" hspace="-10" />
+</figure>
 
-Block math:
-
-$$
-f\left( x \right) = \;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
-$$
+- Male patients are about 1.6 times more likely to die compared to female patients
 
 ---
 
-## Fragments
+## You may still wonder...
 
-Make content appear incrementally
+<ul>
+{{% fragment %}}<li>Yes, I know COVID-19 hits older people harder, but <b>how much harder</b>?</li>{{% /fragment %}}
+{{% fragment %}}<li>Is a <b>healthy 80-year-old</b> or a <b>20-year-old with diabetes</b> at higher risk?</li>{{% /fragment %}}
+{{% fragment %}}<li>What about <b>my community</b>? Do risk factors and their relative importance differ by region?</li>{{% /fragment %}}
+</ul>
 
-```
-{{%/* fragment */%}} One {{%/* /fragment */%}}
-{{%/* fragment */%}} **Two** {{%/* /fragment */%}}
-{{%/* fragment */%}} Three {{%/* /fragment */%}}
-```
-
-Press `Space` to play!
-
-{{% fragment %}} One {{% /fragment %}}
-{{% fragment %}} **Two** {{% /fragment %}}
-{{% fragment %}} Three {{% /fragment %}}
+{{% fragment %}}...{{% /fragment %}}
 
 ---
 
-A fragment can accept two optional parameters:
+## My goals
 
-- `class`: use a custom style (requires definition in custom CSS)
-- `weight`: sets the order in which a fragment appears
-
----
-
-## Speaker Notes
-
-Add speaker notes to your presentation
-
-```markdown
-{{%/* speaker_note */%}}
-- Only the speaker can read these notes
-- Press `S` key to view
-{{%/* /speaker_note */%}}
-```
-
-Press the `S` key to view the speaker notes!
-
-{{< speaker_note >}}
-- Only the speaker can read these notes
-- Press `S` key to view
-{{< /speaker_note >}}
+<ul>
+{{% fragment %}}<li>Predict <b>gradient</b> risk, not just "higher" or "lower"</li>{{% /fragment %}}
+{{% fragment %}}<li>Combine <b>multiple factors</b> to evaluate risk</li>{{% /fragment %}}
+{{% fragment %}}<li>Make predictions <b>specific to each community</b></li>{{% /fragment %}}
+{{% fragment %}}<li>Create a <b>web or mobile app</b> for users to look up</li>{{% /fragment %}}
+</ul>
 
 ---
 
-## Themes
+## Current work
 
-- black: Black background, white text, blue links (default)
-- white: White background, black text, blue links
-- league: Gray background, white text, blue links
-- beige: Beige background, dark text, brown links
-- sky: Blue background, thin dark text, blue links
+- Obtained [data](https://github.com/beoutbreakprepared/nCoV2019/tree/master/latest_data) of 266,874 COVID-19 patients
+- Among them, 1,005 had outcome information (e.g., died, recovered, in treatment)
 
----
-
-- night: Black background, thick white text, orange links
-- serif: Cappuccino background, gray text, brown links
-- simple: White background, black text, blue links
-- solarized: Cream-colored background, dark green text, blue links
+<figure>
+  <img src="/img/snapshot.png" align=top width="700" hspace="-10" />
+</figure>
 
 ---
 
-{{< slide background-image="/img/boards.jpg" >}}
+## Current work
 
-## Custom Slide
+<ul>
+{{% fragment %}}<li>Trained an XGBoost classifier on 12 features (age, sex, 4 symptoms, whether co-morbidities exist and 5 common ones, doctor and hospital density)</li>{{% /fragment %}} 
+{{% fragment %}}<li>F1 score = .88, AUC = .88 in testing data</li>{{% /fragment %}}
+{{% fragment %}}<li>Age and medical resources matter the most</li>{{% /fragment %}} 
+</ul>
 
-Customize the slide style and background
-
-```markdown
-{{</* slide background-image="/img/boards.jpg" */>}}
-{{</* slide background-color="#0000FF" */>}}
-{{</* slide class="my-style" */>}}
-```
+<figure>
+  <img src="/img/eval.png" align=top width="750" hspace="-10" />
+</figure>
 
 ---
 
-## Custom CSS Example
+## Current work
 
-Let's make headers navy colored.
+Deployed the classifier (simplified) as a Heroku web app
 
-Create `assets/css/reveal_custom.css` with:
+<iframe frameborder="0" width="100%" height="500pt" src="https://covid19-risk.herokuapp.com/"></iframe>
 
-```css
-.reveal section h1,
-.reveal section h2,
-.reveal section h3 {
-  color: navy;
-}
-```
+---
+
+## Extending this work at TDI
+
+<ul>
+{{% fragment %}}<li><b>Retrain and re-deploy models</b> online as more patient data becomes available</li>{{% /fragment %}}
+{{% fragment %}}<li>Incorporate <b>local information</b> (e.g., medical resource shortages, policies) to make finer predictions </li>{{% /fragment %}}
+{{% fragment %}}<li>Create a more versatile app that allows users, for instance, to <b>select models and features</b> to use</li>{{% /fragment %}}
+{{% fragment %}}<li>Statistically <b>correct for biases</b> in data reporting</li>{{% /fragment %}}
+</ul>
+
+{{% fragment %}}...{{% fragment %}}
+
 
 ---
 
 # Questions?
 
-[Ask](https://spectrum.chat/academic)
+[Web App](https://covid19-risk.herokuapp.com/)
 
-[Documentation](https://sourcethemes.com/academic/docs/managing-content/#create-slides)
+[GitHub](https://github.com/Yuan-Meng/COVID-19)
