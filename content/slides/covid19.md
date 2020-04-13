@@ -27,6 +27,10 @@ Yuan Meng
 
 ---
 
+# What do we know so far?
+
+---
+
 ## Fatality rate by age
 
 <figure>
@@ -97,8 +101,8 @@ Yuan Meng
 ## Current work
 
 <ul>
-{{% fragment %}}<li>Trained an XGBoost classifier on 12 features (demographic, clinical, doctor + bed density)</li>{{% /fragment %}} 
-{{% fragment %}}<li>F1 score = .88, AUC = .88 in testing data; age and medical resources matter the most</li>{{% /fragment %}}
+{{% fragment %}}<li>Trained an SVM classifier on 12 features (2 demographic, 8 clinical, 2 medical resources)</li>{{% /fragment %}} 
+{{% fragment %}}<li><b>Great performance</b>: F1 score = .91, AUC = .95 in test; F1 score = .92, AUC = .91 in full dataset</li>{{% /fragment %}}
 </ul>
 
 <figure>
@@ -109,7 +113,7 @@ Yuan Meng
 
 ## Current work
 
-Deployed the classifier (simplified version) as a Heroku web app → take user input to make new predictions
+Deployed the trained classifier as a Heroku web app → take user input to make new predictions
 
 <iframe frameborder="0" width="100%" height="500pt" src="https://covid19-risk.herokuapp.com/"></iframe>
 
@@ -119,7 +123,7 @@ Deployed the classifier (simplified version) as a Heroku web app → take user i
 
 <ul>
 {{% fragment %}}<li><b>Retrain and re-deploy models</b> online as more patient data becomes available</li>{{% /fragment %}}
-{{% fragment %}}<li>Incorporate <b>local information</b> (e.g., medical resource and shortages, stay-at-home, policies, population density) to make finer predictions </li>{{% /fragment %}}
+{{% fragment %}}<li>Incorporate <b>local information</b> (e.g., medical shortages, stay-at-home policies, population density) to make finer predictions </li>{{% /fragment %}}
 {{% fragment %}}<li>Create a more versatile app that allows users, for instance, to <b>select models and features</b> to use</li>{{% /fragment %}}
 {{% fragment %}}<li>Statistically <b>correct for biases</b> in data reporting</li>{{% /fragment %}}
 </ul>
