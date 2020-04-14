@@ -31,33 +31,28 @@ Yuan Meng
 ---
 
 ## Data
-<ul>
-{{% fragment %}}<li>Obtained <a href="https://github.com/beoutbreakprepared/nCoV2019/tree/master/latest_data">data</a> from the <a href="https://github.com/beoutbreakprepared/nCoV2019">University of Washington</a></li>{{% /fragment %}} 
-{{% fragment %}}<li>266,874 COVID-19 patients → 1,005 with outcomes (e.g., died, recovered, in treatment)</li>{{% /fragment %}}
-</ul>
 
-<figure>
-  <img src="/img/snapshot.png" align=top width="700" hspace="-10" />
-</figure>
+<ul>
+{{% fragment %}}<li>Obtained <a href="https://github.com/beoutbreakprepared/nCoV2019/tree/master/latest_data">data</a> from <a href="https://github.com/beoutbreakprepared/nCoV2019">UW</a>: 266,874 COVID-19 patients, 1,005 with outcomes (died, ICU, etc.)</li>{{% /fragment %}} 
+{{% fragment %}}<li><b>Performance</b>: F1 score = .91, AUC = .95 in test; F1 score = .92, AUC = .91 in full dataset</li>{{% /fragment %}}
+{{% fragment %}}<figure><img src="/img/viz.png" align=center width="600" hspace="-10" /></figure>{{% /fragment %}}
+</ul>
 
 ---
 
 ## Classifier
 
 <ul>
-{{% fragment %}}<li><b>Features</b>: Trained an SVM classifier on 12 features (demographic: 2, clinical: 8, medical resources: 8)</li>{{% /fragment %}} 
+{{% fragment %}}<li><b>Features</b>: Trained an SVM classifier on 12 features (demographic: 2, clinical: 8, medical resources: 2)</li>{{% /fragment %}} 
 {{% fragment %}}<li><b>Performance</b>: F1 score = .91, AUC = .95 in test; F1 score = .92, AUC = .91 in full dataset</li>{{% /fragment %}}
+{{% fragment %}}<figure><img src="/img/eval.png" align=center width="600" hspace="-10" /></figure>{{% /fragment %}}
 </ul>
-
-<figure>
-  <img src="/img/eval.png" align=top width="620" />
-</figure>
 
 ---
 
 ## Web App
 
-Deployed the trained classifier as a Heroku web app → take user input to make new predictions
+Deployed the trained classifier as a [Heroku web app](https://covid19-risk.herokuapp.com) → take user input to make new predictions
 
 <iframe frameborder="0" width="100%" height="500pt" src="https://covid19-risk.herokuapp.com/"></iframe>
 
@@ -66,12 +61,10 @@ Deployed the trained classifier as a Heroku web app → take user input to make 
 ## Extending this work at TDI
 
 <ul>
-{{% fragment %}}<li><b>Retrain and re-deploy models</b> online as more patient data becomes available</li>{{% /fragment %}}
-{{% fragment %}}<li>Incorporate <b>state- or county-level data</b> (e.g., medical shortages, stay-at-home policies, population density) to make finer predictions </li>{{% /fragment %}}
+{{% fragment %}}<li><b>Retrain and re-deploy model</b> online as more patient data becomes available</li>{{% /fragment %}}
+{{% fragment %}}<li>Incorporate <b>state- or county-level data</b> on medical shortages, stay-at-home policies, population density, etc. to make finer predictions </li>{{% /fragment %}}
 {{% fragment %}}<li>Create a more versatile app that allows users to <b>select models and features</b> to use</li>{{% /fragment %}}
 </ul>
-
-{{% fragment %}}...{{% fragment %}}
 
 ---
 
@@ -88,6 +81,6 @@ Deployed the trained classifier as a Heroku web app → take user input to make 
 ## Contributions
 
 - Older patients are hit harder, but how much harder? **→ Make predictions in a gradient manner** 
-- Healthy 80-year-old vs. 20-year-old with chronic diseases? **→Combine multiple factors**
+- Healthy 80-year-old vs. 20-year-old with chronic diseases? **→ Combine multiple factors**
 - **Convenience:** Users can look up their risk on their mobile phone or web browser w/o ML
 
