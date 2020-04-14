@@ -34,7 +34,7 @@ Yuan Meng
 
 <ul>
 {{% fragment %}}<li>Obtained <a href="https://github.com/beoutbreakprepared/nCoV2019/tree/master/latest_data">data</a> from <a href="https://github.com/beoutbreakprepared/nCoV2019">UW</a>: 266,874 COVID-19 patients, 1,005 with outcomes (died, ICU, etc.)</li>{{% /fragment %}} 
-{{% fragment %}}<li>266,874 COVID-19 patients, 1,005 with outcomes (died, ICU, etc.)</li>{{% /fragment %}}
+{{% fragment %}}<li>US has most cases; half under 48; most survived</li>{{% /fragment %}}
 {{% fragment %}}<figure><img src="/img/viz.png" align=center width="600" hspace="-10" /></figure>{{% /fragment %}}
 </ul>
 
