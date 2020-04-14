@@ -21,7 +21,7 @@ Yuan Meng
 [Code](https://github.com/Yuan-Meng/COVID-19) | [Web App](https://covid19-risk.herokuapp.com/)
 
 {{< speaker_note >}}
-- At The Data Incubator (TDI), I plan to to build a COVID-19 risk predictor. 
+- The project I'll be proposing today is a COVID-19 risk predictor. 
 {{< /speaker_note >}}
 
 ---
@@ -29,7 +29,7 @@ Yuan Meng
 # If I get COVID-19, will I survive or die? 
 
 {{< speaker_note >}}
-- The end product will be a web app that predicts users mortality risk if they contract COVID-19.
+- The end product will be a web app that predicts users' mortality risk should they contract COVID-19.
 - Knowing the answer helps hospitals better allocate resources and prompt people to rethink their reckless behaviors.
 {{< /speaker_note >}}
 
@@ -53,7 +53,7 @@ Yuan Meng
 {{< speaker_note >}}
 - First, I obtained patient data from researchers at the University of Washington.
 - Their dataset has nearly 300 thousand patients with outcomes for about 1,000.
-- (As expected, the US now has most patients. Actually, about half of patients are under 48. Most survived.)
+- (As expected, the US now has most patients. About half of patients are under 48. Most survived.)
 {{< /speaker_note >}}
 
 ---
@@ -61,14 +61,15 @@ Yuan Meng
 ## Classifier
 
 
-- **Features:** Trained an SVM classifier on 12 features (demographic: 2, clinical: 8, medical resources: 2)
-- **Performance:** F1 score = .91, AUC = .95 in test; F1 score = .92, AUC = .91 in full dataset
+- Trained an SVM classifier using **demographic** (2), **clinical** (8) and **medical resources** (2) features → F1 score = .91, AUC = .95 in testing
+- **Most important**: doctors per 10k residents, age
 
-<figure><img src="/img/evaluation.png" align=top width="650" hspace="-10" /></figure>
+<figure><img src="/img/shap.png" align=top width="480" hspace="-10" /></figure>
 
 {{< speaker_note >}}
 - I trained a SVM classifier using 12 features under 3 categories: demographic (including age and sex), clinical (including top 4 chronic diseases and symptoms), as well as medical resources (including beds and doctors per 10 thousand residents for each country).
-- The classifier did pretty a good job at classifying outcomes based on these features, as you can see from metrics like F1 scores and AUC.
+- The classifier did pretty a good job at classifying outcomes based on these features, as you can see from high F1 scores and AUC. 
+- Features contributing the most the outcome are docs_per_10k and age. To sum up, older patients in countries with fewer doctors are at higher risk.
 {{< /speaker_note >}}
 
 ---
@@ -82,7 +83,7 @@ Deployed the trained classifier as a [Heroku web app](https://covid19-risk.herok
 {{< speaker_note >}}
 - Finally, I deployed the trained classifier as a web app using Flask + Heroku. 
 - The app is embedded in my presentation so you can try it for yourself!
-- Basically, after answering a few questions, it returns your probability of death if you get COVID-19.
+- All you need is to answer a few questions and hit submit, then you can see your probability of death if you get COVID-19.
 {{< /speaker_note >}}
 
 ---
@@ -92,14 +93,14 @@ Deployed the trained classifier as a [Heroku web app](https://covid19-risk.herok
 <ul>
 {{% fragment %}}<li><b>Retrain and re-deploy model</b> online as more patient data becomes available</li>{{% /fragment %}}
 {{% fragment %}}<li>Incorporate <b>state- or county-level data</b> on resource shortages, stay-at-home policies, population density, etc. to make finer predictions </li>{{% /fragment %}}
-{{% fragment %}}<li>Create a more versatile app that allows users to <b>select models and features</b> to use</li>{{% /fragment %}}
+{{% fragment %}}<li>Predict mortality risk of other diseases.</li>{{% /fragment %}}
 </ul>
 
 {{< speaker_note >}}
 I plan to extend this work at TDI in several ways:
-- First of all, it would be great to retain and redeploy this model as new patient data comes in.
-- For medical resources, we can add county-level data rather than just country-level data.
-- It's a bonus if users can choose which models and features to use to make prediction. 
+- First of all, it would be great to retain and redeploy this model as new patient data comes in
+- For medical resources, we can add state-level data rather than just country-level data
+- We can use the framework to build apps that predict mortality risk of other diseases
 {{< /speaker_note >}}
 
 ---
