@@ -34,7 +34,7 @@ Yuan Meng
 
 <ul>
 {{% fragment %}}<li>Obtained <a href="https://github.com/beoutbreakprepared/nCoV2019/tree/master/latest_data">data</a> from <a href="https://github.com/beoutbreakprepared/nCoV2019">UW</a>: 266,874 COVID-19 patients, 1,005 with outcomes (died, ICU, etc.)</li>{{% /fragment %}} 
-{{% fragment %}}<li><b>Performance</b>: F1 score = .91, AUC = .95 in test; F1 score = .92, AUC = .91 in full dataset</li>{{% /fragment %}}
+{{% fragment %}}<li>266,874 COVID-19 patients, 1,005 with outcomes (died, ICU, etc.)</li>{{% /fragment %}}
 {{% fragment %}}<figure><img src="/img/viz.png" align=center width="600" hspace="-10" /></figure>{{% /fragment %}}
 </ul>
 
