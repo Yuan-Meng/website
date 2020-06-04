@@ -159,7 +159,7 @@ predictions = aglo.test(test)
 
 ---
 
-## Evalution
+## Evaluation
 ### Is the recommender any good?
 
 {{< speaker_note >}}
@@ -187,7 +187,7 @@ predictions = aglo.test(test)
 
 ## Diversity
 
-- Intra-list similarity (**ILS**): consine similarity of movies recommended to the same user, averaged across all pairs of items
+- Intra-list similarity (**ILS**): Consine similarity of movies recommended to the same user, averaged across all pairs of items
 
 $$\mathrm{ILS_{user}} = \frac{1}{2}\sum_{i_j\in L}\sum_{i_k \in L}\mathrm{sim}(i_j, i_k)$$
 
@@ -202,7 +202,7 @@ $$\mathrm{ILS_{user}} = \frac{1}{2}\sum_{i_j\in L}\sum_{i_k \in L}\mathrm{sim}(i
 
 ## Personalization
 
-- **Personalization**: dissimilarity (1 - cosine similarity) between different recommendation lists, averaged across all pairs of lists
+- **Personalization**: Dissimilarity (1 - cosine similarity) between different recommendation lists, averaged across all pairs of lists
 
 $$\mathrm{Personalization} = 1 - \sum_{u_i\in U}\sum_{u_j\in U} \mathrm{sim}(L_{u_i}, L_{u_j})$$
 
@@ -325,7 +325,7 @@ generate_rec(mwm_rating, "score")
 
 ---
 
-### Overcome the "cold-start"
+### Overcome the "cold start"
 
 - Ask each new user to rate 20 movies (narrowed down by genre, e.g., "Horror")
   - Popularity: great for connecting users
