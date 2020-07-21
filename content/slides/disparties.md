@@ -148,6 +148,11 @@ University of California, Berkeley
 
 #### Experiment 2: Check + hit rates
 
+<ul>
+  <li>Critical (check-hit): 6-1, 6-0, 5-1, 5-0, 2-2, 1-1</li>
+  <li>Fillers (check-hit): 6-6, 6-5, 5-5, 5-4, 2-0, 1-0</li>
+</ul>
+
 {{% fragment %}}<figure align="center"><img src="/img/cogsci/procedure2.png" width="600" /></figure>{{% /fragment %}}
 
 {{< speaker_note >}}
@@ -227,6 +232,8 @@ University of California, Berkeley
 # Questions?
 
 Email:[yuan_meng@berkeley.edu](mailto:yuan_meng@berkeley.edu)
+
+Paper: [tinyurl.com/y6585bpk](https://github.com/Yuan-Meng/PISG/blob/master/paper/meng_0529.pdf)
 
 GitHub: [github.com/Yuan-Meng/PISG](github.com/Yuan-Meng/PISG)
 
