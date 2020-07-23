@@ -50,8 +50,9 @@ Capstone @TDI, Jul. 23, 2020
 
 ### Web App
 
-- **Input:** age, sex, state, chronic diseases, party size (coming soon...)
+- **Input:** age, sex, state, chronic diseases, party size
 - **Output:** severity, risk factors, infection risk
+<a href="https://covid19-risk.herokuapp.com/"><center>Demo version</center></a>
 <iframe frameborder="0" width="100%" height="500pt" src="https://covid19-risk.herokuapp.com/"></iframe>
 
 {{< speaker_note >}}
