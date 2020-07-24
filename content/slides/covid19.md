@@ -14,7 +14,7 @@ slides:
 
 Yuan Meng
 
-Capstone @TDI, Jul. 23, 2020
+Capstone @TDI, Jul. 24, 2020
 
 [Code](https://github.com/Yuan-Meng/COVID-19) | [Web App](https://covid19-risk.herokuapp.com/)
 
@@ -36,9 +36,7 @@ Capstone @TDI, Jul. 23, 2020
 
 ### Reopen = safe for me?
 
-<ul>
-  {{% fragment %}}<figure><img src="/img/covid/second_wave.png" align=top width="800" /></figure>{{% /fragment %}}
-</ul>
+<figure><img src="/img/covid/second_wave.png" align=top width="800" /></figure>
 
 {{< speaker_note >}}
 - This is the time that gives us both hope and confusions: Our old life seems to be coming back but is it safe for me personally?
@@ -67,7 +65,7 @@ Capstone @TDI, Jul. 23, 2020
 
 - **Own risk:** "I'm a 60-year-old California resident with diabetes. Can I safely go out by myself?"
 - **Social contacts:**  "Should I go kayaking with 3 friends this weekend?"
-- **Government**: Send warnings to at-risk populations; adjust safe "social bubble" size
+- **Government**: Send warnings to at-risk sub-populations; adjust safe "social bubble" size
 
 {{< speaker_note >}}
 - You can use this app to estimate your own risk, like I just did. 
